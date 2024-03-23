@@ -162,6 +162,16 @@ files = [
 ]
 
 [[package]]
+name = "antiorm"
+version = "1.2.1"
+description = "A Pythonic Helper for DBAPI-2.0 SQL Access"
+optional = false
+python-versions = "*"
+files = [
+    {file = "antiorm-1.2.1.tar.gz", hash = "sha256:96eb1841ce5163db4cf1dc13f4499ec2d7cffc190cf724b78ffdd3e6b7c4ff93"},
+]
+
+[[package]]
 name = "asttokens"
 version = "2.4.1"
 description = "Annotate AST trees with source code positions"
@@ -384,6 +394,32 @@ files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
+
+[[package]]
+name = "db"
+version = "0.1.1"
+description = "Databases for Humans"
+optional = false
+python-versions = "*"
+files = [
+    {file = "db-0.1.1.tar.gz", hash = "sha256:980e772f15c1161d3b287ffec4f144e40961b0b3e6d5102809577870bf6c5808"},
+]
+
+[package.dependencies]
+antiorm = "*"
+
+[[package]]
+name = "db-sqlite3"
+version = "0.0.1"
+description = "sqlite3 driver for db"
+optional = false
+python-versions = "*"
+files = [
+    {file = "db-sqlite3-0.0.1.tar.gz", hash = "sha256:4dd410aa28a2c5b66de477f9dc62f523133217dd31c7ed7eb085214bea148db9"},
+]
+
+[package.dependencies]
+db = "*"
 
 [[package]]
 name = "executing"
@@ -1045,4 +1081,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e99bdd477ed76a904197f81fd0f939b0d933b0713ff54f37bb98be7967a30f3e"
+content-hash = "02b01b121abf6d8549feaf4737552f3ff320713513ac98cf9f54b2b14ac573b3"
